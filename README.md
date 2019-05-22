@@ -3,6 +3,7 @@ Using Markov Chains to a play a simplified version of monopoly.
 
 **Rules to implement:**
 
+
 &nbsp;
 The monopoly board in picture represents a simplified version of the monopoly game. Strategy for monopoly can often be complicated, but a good place to begin strategizing is to find out which squares are most frequently visited. Players begin the game on the Go (0) square, rolling a dice to determine how many places forward they move.
 
