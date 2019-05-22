@@ -3,6 +3,11 @@ import numpy.linalg as la
 
 # Board spec: UIUCMonopolyDraft1.png
 
+'''
+Assigns transition probabilities from each square on the board.
+@param size - number of tiles accessible on the board
+@return board_matrix - 2D numpy array of transition probabilities
+'''
 def get_transition_matrix(size=16):
     board_matrix = np.zeros((size, size))
 
@@ -41,10 +46,6 @@ def get_transition_matrix(size=16):
     board_matrix[:, go_to_jail_index] = 0.0
     board_matrix[jail_index, go_to_jail_index] = 1.0
     return board_matrix
-
-def print_list_form(mat):
-    for i in range(mat.shape[0]):
-        print (list(mat[i, :]))
 
 def main():
     M = get_transition_matrix()
